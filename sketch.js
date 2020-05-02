@@ -18,11 +18,12 @@ function setup(){
 
     ground = new Ground(600,height,1200,20);
     platform = new Ground(150, 305, 300, 170);
-
+    
     box1 = new Box(700,320,70,70);
     box2 = new Box(920,320,70,70);
     pig1 = new Pig(810, 350);
     log1 = new Log(810,260,300, PI/2);
+    log6 = new Log(500,145,300, PI/6);
 
     box3 = new Box(700,240,70,70);
     box4 = new Box(920,240,70,70);
@@ -33,8 +34,15 @@ function setup(){
     box5 = new Box(810,160,70,70);
     log4 = new Log(760,120,150, PI/7);
     log5 = new Log(870,120,150, -PI/7);
+    log7 = new Log(760,240,350, -PI/4);
+
+    box6 = new Box(450,100,50,50);
+
 
     bird = new Bird(100,100);
+
+    platform1 = new Ground(200,200,450,10);
+
 
 }
 
@@ -56,9 +64,13 @@ function draw(){
     log3.display();
 
     box5.display();
+    box6.display();
     log4.display();
     log5.display();
+    log6.display();
 
     bird.display();
     platform.display();
+    platform1.display();
+    platform2.display();
 }
